@@ -56,21 +56,18 @@ $posts = [
 <body>
   <ul>
     <?php foreach ($posts as $date => $datePosts) : ?>
-    <li>
+      <li>
         <h2><?= $date ?></h2>
         <ul>
           <?php foreach ($datePosts as $post) : ?>
-          <li>
-              <ul>
-                <?php foreach ($post as $value) : ?>
-                <li><?= $value ?></li>
-                <?php endforeach ?>
-              </ul>
-          </li>
-          <hr>
+            <li>
+              <h4><?= $post['title'] ?></h4>
+              <em><?= $post['author'] ?></em>
+              <p><?= $post['text'] ?></p>
+            </li>
           <?php endforeach ?>
         </ul>
-    </li>
+      </li>
     <?php endforeach ?>
   </ul>
 </body>
