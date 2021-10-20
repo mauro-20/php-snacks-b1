@@ -54,7 +54,7 @@ $db = [
     <ul>
       <?php foreach ($db['teachers'] as $teacher) : ?>
         <li>
-          <? echo "{$teacher['name']}  {$teacher['lastname']}" ?>
+          <?= "{$teacher['name']}  {$teacher['lastname']}" ?>
         </li>
       <?php endforeach ?>
     </ul>
@@ -63,7 +63,7 @@ $db = [
     <ul>
       <?php foreach ($db['pm'] as $person) : ?>
         <li>
-          <? echo "{$person['name']}  {$person['lastname']}" ?>
+          <?= "{$person['name']}  {$person['lastname']}" ?>
         </li>
       <?php endforeach ?>
     </ul>
