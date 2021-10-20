@@ -12,7 +12,7 @@ Passare come parametri GET name, mail e age e verificare (cercando i metodi che 
   if ($name || $email || $age){
     $show = true;
   }
-  if (strlen($name) > 3 && strpos($email, '@') != false && strpos($email, '.') != false && is_numeric($age)) {
+  if (strlen($name) > 3 && strpos($email, '@') && strpos($email, '.') && is_numeric($age)) {
     $access = true;
   };
 
